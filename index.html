@@ -20,12 +20,14 @@
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
+            <img src="./img/fotoPerfil.png" alt="Foto de perfil" width="150" height="150">
             <p>Hola, soy Kevin Joel Salazar Rodríguez, un estudiante de Ingeniería en Computación en la Escuela Superior Politécnica del Litoral (ESPOL). Me interesa la programación y el desarrollo de software, y estoy constantemente en busca de oportunidades para aplicar mis conocimientos, enfrentar nuevos retos y seguir aprendiendo en el mundo de la tecnología.</p>
         </section>
         <section id="experiencia">
@@ -36,15 +38,22 @@
         </section>
         <section id="proyectos">
             <h2>Proyectos Destacados</h2>
-            <ul>
+            <ol>
                 <li><strong>Sistema de compra y venta de vehículos</strong> - Simulación de compra y venta de autos, caminionetas y motocicletas, con funcionalidades como listas de deseados y filtros personalizados. Desarrollado en Java (sin base de datos real).</li>
-                <li><strong>Juego de adivinación de animales</strong> - Aplicación en Java que usa un árbol AVL para que la máquina adivine en qué animal está pensando el usuario. Incluye un modo alternativo donde el usuario intenta adivinar al animal seleccionado por la máquina.</li>
-                <li><strong>Gestión de base de datos para servicios de mascotas</strong> - Interfaz intuitiva inspirada en los datos que almacena la plataforma PetBacker, diseñada para administrar registros y servicios relacionados con el cuidado de mascotas.</li>
-            </ul>
+
+                <li><strong>Gestión de base de datos de una página web</strong> - Interfaz intuitiva inspirada en los datos que almacena la plataforma PetBacker, diseñada para administrar registros y servicios relacionados con el cuidado de mascotas.</li>
+
+                <li><p><strong>Juego de adivinación de animales</strong> - Aplicación en Java que usa un árbol AVL para que la máquina adivine en qué animal está pensando el usuario. Incluye un modo alternativo donde el usuario intenta adivinar al animal seleccionado por la máquina.</p>
+                <iframe src="https://placehold.co/560x315" width="560" height="315" style="border: 1px solid #ccc;" title="Demostración del proyecto Juego de adivinación de animales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe></li>
+
+                <!-- Párrafo con un enlace -->
+                <p>Para más información sobre mis proyectos y experiencia, visita mi <a href="https://github.com/KevinJSalazar" target="_blank">perfil de GitHub</a>.</p>
+
+            </ol>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
-            <ul>
+            <ol>
                 <li>
                     <strong>Unidad Educativa Salesiana Fiscomisional Domingo Savio</strong><br>
                     Educación Básica e Intermedia<br>
@@ -57,7 +66,7 @@
                     <em>2022 - Actualidad</em><br>
                     Actualmente curso la carrera, adquiriendo conocimientos en programación, desarrollo de software, bases de datos y tecnologías web.
                 </li>
-            </ul>
+            </ol>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
@@ -74,7 +83,31 @@
                 <li>Aprendizaje rápido y adaptabilidad</li>
                 <li>Creatividad e innovación</li>
                 <li>Gestión del tiempo y organización</li>
-            </ul>               
+            </ul>
+            <!-- Tabla sin bordes -->
+            <h3>Lenguajes y Tecnologías</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Lenguajes</th>
+                    <th>Tecnologías</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Python</td>
+                    <td>Flask, Django</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Java</td>
+                    <td>Spring, JavaFX</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>JavaScript</td>
+                    <td>React, Node.js</td>
+                </tr>
+            </table>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
@@ -84,6 +117,73 @@
                 <li>GitHub: <a href="https://github.com/KevinJSalazar" target="_blank">KevinJSalazar</a></li>
                 <li>Portafolio: <a href="https://kevinjsalazar.github.io/KevinJSalazar" target="_blank">kevinjsalazar.github.io/KevinJSalazar</a></li>
             </ul>
+            <h3>Ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6826801345793!2d-79.96773917083964!3d-2.1455748999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d1f1d1f1d1f%3A0x1234567890abcdef!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1697040000000!5m2!1ses!2sec" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <h3>Contacto</h3>
+            <form action="/submit" method="post">
+                <!-- Campo de texto en una línea -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <!-- Lista desplegable -->
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="proyecto">Propuesta de proyecto</option>
+                    <option value="otro">Otro</option>
+                </select>
+        
+                <!-- Conjunto de opciones relacionadas -->
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <input type="radio" id="email" name="contacto" value="email" required>
+                    <label for="email">Correo electrónico</label>
+                    <input type="radio" id="telefono" name="contacto" value="telefono" required>
+                    <label for="telefono">Teléfono</label>
+                </fieldset>
+        
+                <!-- Vector de valores (checkboxes) -->
+                <fieldset>
+                    <legend>Áreas de interés:</legend>
+                    <input type="checkbox" id="programacion" name="intereses" value="programacion" required>
+                    <label for="programacion">Programación</label>
+                    <input type="checkbox" id="diseno" name="intereses" value="diseno" required>
+                    <label for="diseno">Diseño</label>
+                    <input type="checkbox" id="gestion" name="intereses" value="gestion" required>
+                    <label for="gestion">Gestión</label>
+                </fieldset>
+        
+                <!-- Área de texto -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+                <!-- Botón para enviar -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <article>
+                <blockquote>"Kevin es un perfeccionista con sus trabajos, revisa varias veces el código y prueba varias veces el programa para estar seguro de que todo funcione lo mejor posible."</blockquote>
+                <p><strong>Levin Morán</strong> - Estudiante de la carrera de Computación en ESPOL. Trabajó con Kevin en el desarrollo del proyecto de una base de datos de una pagina web. Más información de este proyecto.</p>
+            </article>
+            <article>
+                <blockquote>"Es responsable con las fecha de entrega final de los trabajos."</blockquote>
+                <p><strong>Silvia Saquisili</strong> - Estudiante de la carrera de Computación en ESPOL. Colaboró con Kevin en numerosos trabajos académicos haciendo uso de Java y JavaFX, entre los cuales se encuentra el juego de adivinacion de animales. Más información de este proyecto.</p>
+            </article>
+            <article>
+                <blockquote>"Kevin siempre demuestra compromiso y excelencia en cada tarea que realiza."</blockquote>
+                <p><strong>Laura Gómez</strong> - Directora de Desarrollo en SoftCorp. Supervisó a Kevin durante una pasantía, destacando su proactividad y habilidades técnicas.</p>
+            </article>
         </section>
     </main>
     <footer>
