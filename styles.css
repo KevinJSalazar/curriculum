@@ -114,6 +114,50 @@ footer {
     margin-top: 30px;
 }
 
+#experiencia table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fafcff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#experiencia th, #experiencia td {
+    border: none; /* Aquí se definen los bordes */
+    padding: 12px 10px;
+    text-align: left;
+}
+
+#perfil .perfil-contenido {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#perfil img {
+    flex-shrink: 0;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#perfil p {
+    margin: 0;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 700px) {
+    #perfil .perfil-contenido {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    #perfil img {
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 600px) {
     main {
         padding: 18px 5px;
