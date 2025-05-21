@@ -1,0 +1,123 @@
+* {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+}
+
+h1 {
+    /* Alineación del texto */
+    text-align: center;
+    
+    /* Grosor de la fuente negrita */
+    font-weight: bold;
+}
+
+#photo {
+    /* Ancho del elemento */
+    width: 8vw;
+
+    /* Alto del elemento */
+    height: auto;
+}
+
+.subtitle {
+    /* Color del texto en rgba */
+    color: rgb(151 156 165 / 0.89);
+
+    /* Transformación del texto a mayúscula */
+    text-transform: uppercase;
+}
+
+footer p {
+    /* Alineación del texto a la derecha */
+    text-align: right;
+
+    /* Estilo de fuente itálica */
+    font-style: italic;
+}
+
+nav > ul {
+    /* Eliminar los estilos de lista predeterminados */
+    list-style: none;
+}
+
+section {
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd;
+
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px;
+
+    /* relleno (espacio interno) de
+    1.5% en la parte superior e inferior y
+    0.8% a los lados derecho e izquierdo. */
+
+    padding: 1.5% 0.8%;
+
+    /* Margen inferior ajustado */
+    margin-bottom: 1.2rem;
+}
+
+#perfil .perfil-contenido {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.pikachu-anim {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: auto;
+    z-index: 1000;
+    animation: pikachuBlink 4s linear infinite;
+    /* Opcional: transición suave al aparecer/desaparecer */
+}
+
+@keyframes pikachuBlink {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    30% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Espaciado para la sección de contacto */
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacio entre los elementos del formulario */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+
+#contacto label,
+#contacto input,
+#contacto textarea,
+#contacto button {
+    margin-bottom: 4px;
+}
+
+#contacto input,
+#contacto textarea {
+    padding: 8px;
+    border: 1px solid #cedddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contacto button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #97b6e5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#contacto button:hover {
+    background-color: #6a93c7;
+}

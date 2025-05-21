@@ -7,7 +7,7 @@
     <meta name="keywords" content="CV, Curriculum, Kevin Salazar, Experiencia, Educación">
     <meta name="description" content="Curriculum Vitae de Kevin Salazar">
     <meta name="author" content="Kevin Salazar">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
     <header>
@@ -23,16 +23,23 @@
             </ul>
         </nav>
     </header>
+    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu" class="pikachu-anim">
     <main>
         <section id="perfil">
-            <h2>Perfil</h2>
+            <h2 class=subtitle>Perfil</h2>
             <div class="perfil-contenido">
-                <img src="./img/fotoPerfil.JPG" alt="Foto de perfil" width="150" height="150">
+                <img src="./img/fotoPerfil.JPG" id=photo alt="Foto de perfil" width="150" height="150">
                 <p>Hola, soy Kevin Joel Salazar Rodríguez, un estudiante de Ingeniería en Computación en la Escuela Superior Politécnica del Litoral (ESPOL). Me interesa la programación y el desarrollo de software, y estoy constantemente en busca de oportunidades para aplicar mis conocimientos, enfrentar nuevos retos y seguir aprendiendo en el mundo de la tecnología.</p>
+            </div>
+            <div style="text-align:center; margin-top:20px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qAdBVpN7nz0" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class=subtitle>Experiencia</h2>
             <p>A lo largo de mi formación académica y personal, he participado en diversos proyectos de software y aplicaciones móviles. Tengo experiencia trabajando con Python, Java y C++, además de conocimientos en desarrollo web con HTML.</p>
             <h3>Experiencia Laboral</h3>
             <p>Aunque aún no cuento con experiencia laboral formal, he sido parte de prácticas colaborativas y proyectos académicos que me han permitido fortalecer habilidades como la resolución de problemas, trabajo en equipo y pensamiento crítico.</p>
@@ -45,19 +52,19 @@
                     <th>Fecha de finalización</th>
                 </tr>
                 <tr>
-                    <td>Sistema de compra y venta de vehículos</td>
+                    <th>Sistema de compra y venta de vehículos</th>
                     <td>Simulación de compra y venta de autos, camionetas y motocicletas, con funcionalidades como listas de deseados y filtros personalizados.</td>
                     <td>Java, JavaFX, XML (FXML)</td>
                     <td>Julio 2023</td>
                 </tr>
                 <tr>
-                    <td>Gestión de base de datos de una página web</td>
+                    <th>Gestión de base de datos de una página web</th>
                     <td>Interfaz inspirada en la plataforma PetBacker, diseñada para administrar registros y servicios relacionados con el cuidado de mascotas.</td>
                     <td>Java, JavaFX, MySQL, XML (FXML)</td>
                     <td>Diciembre 2023</td>
                 </tr>
                 <tr>
-                    <td>Juego de adivinación de animales</td>
+                    <th>Juego de adivinación de animales</th>
                     <td>Aplicación en Java que usa un árbol AVL para que la máquina adivine en qué animal está pensando el usuario. Incluye modo alternativo para que el usuario adivine.</td>
                     <td>Java, JavaFX, XML (FXML)</td>
                     <td>Mayo 2024</td>
@@ -66,33 +73,30 @@
             <p>Para más información sobre mis proyectos y experiencia, visita mi <a href="https://github.com/KevinJSalazar" target="_blank">perfil de GitHub</a>.</p>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class=subtitle>Educación</h2>
             <ol>
                 <li>
                     <strong>Unidad Educativa Salesiana Fiscomisional Domingo Savio</strong><br>
                     <em>2009 - 2022</em><br>
                     Nivel: Bachillerato Técnico<br>
-                    
                     Bachillerato Técnico en Instalaciones, Equipos y Máquinas Eléctricas, con formación práctica y teórica en sistemas eléctricos, automatización, mantenimiento industrial y seguridad eléctrica. <a href="https://www.fiec.espol.edu.ec/es/carreras-de-grado/computacion" target="_blank">Ver página web.</a>
                 </li>
                 <li>
                     <strong>Escuela Superior Politécnica del Litoral (ESPOL)</strong><br>
                     <em>2022 - Actualidad</em><br>
                     Carrera: <a href="https://www.fiec.espol.edu.ec/es/carreras-de-grado/computacion" target="_blank">Ingeniería en Computación</a><br>
-                    
                     La carrera de Computación de ESPOL forma profesionales capaces de diseñar e implementar soluciones de software y hardware en equipos interdisciplinarios, aplicando conocimientos en arquitectura de computadoras, tecnologías de software, sistemas de información y electrónica, con un enfoque ético y sostenible.
                 </li>
                 <li>
                     <strong>DataCamp</strong><br>
                     <em>2024</em><br>
                     Curso: <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/00220ca54363c4749212565e0a4751de6c38df7e" target="_blank">Intermediate SQL</a><br>
-                    
                     Este curso de SQL en DataCamp enseña a filtrar, agrupar y resumir datos usando una base de películas, combinando consultas limpias y buenas prácticas para obtener insights claros y útiles.
                 </li>
             </ol>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class=subtitle>Habilidades</h2>
             <ul>
                 <li>Conocimientos de inglés (nivel intermedio alto)</li>
                 <li>Lenguajes de programación: Python, Java, C++</li>
@@ -109,7 +113,7 @@
             </ul>
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class=subtitle>Contacto</h2>
             <ul>
                 <li>Correo: <a href="mailto:kejosala@espol.edu.ec">kejosala@espol.edu.ec</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/kevin-salazar-rodr%C3%ADguez-77302b279/" target="_blank">Kevin Salazar Rodríguez</a></li>
@@ -170,22 +174,23 @@
             </form>
         </section>
         <section id="referencias">
-            <h2>Referencias</h2>
+            <h2 class=subtitle>Referencias</h2>
             <article>
                 <blockquote>"Kevin es un perfeccionista con sus trabajos, revisa y pone a prueba varias veces sus proyectos para estar seguro de que todo funcione lo mejor posible."</blockquote>
-                <p><strong>Levin Morán</strong> - Estudiante de la carrera de Computación en ESPOL. Trabajó con Kevin en el desarrollo del proyecto de una base de datos de una pagina web. Más información de este proyecto.</p>
+                <strong>Levin Morán</strong> - Estudiante de la carrera de Computación en ESPOL. Trabajó con Kevin en el desarrollo del proyecto de una base de datos de una pagina web. <a href="https://github.com/KevinJSalazar/ProyectoSBD" target="_blank">Más información</a>.
             </article>
             <article>
                 <blockquote>"Se caracteriza por ser responsable y cumplir puntualmente con las fechas de entrega, asegurando trabajos organizados y de calidad."</blockquote>
-                <p><strong>Silvia Saquisili</strong> - Estudiante de la carrera de Computación en ESPOL. Colaboró con Kevin en numerosos trabajos académicos haciendo uso de Java y JavaFX, entre los cuales se encuentra el juego de adivinación de animales. Más información de este proyecto.</p>
+                <strong>Silvia Saquisili</strong> - Estudiante de la carrera de Computación en ESPOL. Colaboró con Kevin en numerosos trabajos académicos haciendo uso de Java y JavaFX, entre los cuales se encuentra el juego de adivinación de animales. <a href="https://github.com/KevinJSalazar/Proyecto2-EstructurasDatos" target="_blank">Más información</a>.
             </article>
             <article>
                 <blockquote>"Es una persona trabajadora, dedicada y perseverante, que no se detiene hasta completar sus tareas con responsabilidad y compromiso."</blockquote>
-                <p><strong>Angel Gómez</strong> - Colaboró con Kevin en trabajos académicos grupales en la materia de Diseño de Software, participando activamente en el desarrollo y documentación de proyectos.</p>
+                <strong>Angel Gómez</strong> - Colaboró con Kevin en trabajos académicos grupales en la materia de Diseño de Software, participando activamente en el desarrollo y documentación de proyectos.
             </article>
         </section>
     </main>
     <footer>
+        <p>Este CV fue creado como parte de un proyecto académico y personal. Todos los derechos reservados.</p>
         &copy; 2025 Kevin Salazar
     </footer>
 </body>
