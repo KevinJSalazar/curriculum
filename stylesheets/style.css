@@ -1,86 +1,95 @@
 * {
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #f8fafc 0%, #e6f0fa 100%);
+    color: #2d3748;
+    margin: 0;
+    padding: 0;
+    padding: 0 7vw; /* Márgenes laterales responsivos */
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    color: #2b6cb0;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
 }
 
 h1 {
-    /* Alineación del texto */
-    text-align: center;
-    
-    /* Grosor de la fuente negrita */
-    font-weight: bold;
-}
-
-#photo {
-    /* Ancho del elemento */
-    width: 8vw;
-
-    /* Alto del elemento */
-    height: auto;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 0 #e2e8f0;
 }
 
 .subtitle {
-    /* Color del texto en rgba */
-    color: rgb(151 156 165 / 0.89);
-
-    /* Transformación del texto a mayúscula */
-    text-transform: uppercase;
+    color: #718096;
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
 }
 
-footer p {
-    /* Alineación del texto a la derecha */
-    text-align: right;
-
-    /* Estilo de fuente itálica */
-    font-style: italic;
+nav {
+    background: #2b6cb0;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
 }
 
-nav > ul {
-    /* Eliminar los estilos de lista predeterminados */
-    list-style: none;
+nav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3em 0.8em; /* Menos padding */
+    border-radius: 2px;    /* Menos radio */
+    transition: background 0.2s, color 0.2s;
+    display: inline-block; /* Evita que el fondo crezca verticalmente */
+}
 
-    /* Activa el modelo de diseño Flexbox*/
-    display: flex;
-
-    /* Distribuye los elementos con espacio igual entre ellos */
-    justify-content: space-between;
-
-    /* Organiza los elementos en una fila horizontal de izquierda a derecha */
-    flex-direction: row;
-
-    /* Centra verticalmente los elementos dentro del contenedor */
-    align-items: center;
-
-    /* Establece un espacio uniforme de 1rem entre cada elemento */
-    gap: 1rem;
-
-    padding: 0 10%;
+nav > ul > li > a:hover {
+    background: #4fd1c5;
+    color: #2b6cb0;
 }
 
 section {
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    background: #fff;
     border: 0.2pt solid #cedddd;
-
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
     margin: 4px 2px 8px 2px;
-
-    /* relleno (espacio interno) de
-    1.5% en la parte superior e inferior y
-    0.8% a los lados derecho e izquierdo. */
-
     padding: 1.5% 0.8%;
-
-    /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+}
 
-    /* borde redondeado con un radio de 5 píxeles */
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+#photo {
+    border-radius: 50%;
+    border: 3px solid #4fd1c5;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+    margin-bottom: 1em;
+}
 
-    /* sombra a un elemento */
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+footer {
+    background: #2b6cb0;
+    color: #fff;
+    padding: 1em 0;
+    margin-top: 2em;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+
+a {
+    color: #2b6cb0;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #4fd1c5;
 }
 
 #perfil .perfil-contenido {
