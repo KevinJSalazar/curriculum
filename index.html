@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
+    <!-- Encabezado principal y navegación -->
     <header>
-        <h1 align=center>Curriculum Vitae de Kevin Salazar</h1>
-        <nav>
+        <h1>Curriculum Vitae de Kevin Salazar</h1>
+        <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="#perfil">Perfil</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
@@ -22,79 +23,129 @@
                 <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
+        <!-- Botón de modo oscuro -->
+        <button id="toggle-dark" type="button" aria-pressed="false" aria-label="Alternar modo oscuro">
+            🌑 Modo oscuro
+        </button>
     </header>
-    <img src="https://i.pinimg.com/originals/ab/be/28/abbe28a943ed44fcd98452687f7c46c9.gif" alt="Pikachu" class="pikachu-anim">
+
     <main>
+        <!-- Sección Perfil -->
         <section id="perfil">
-            <h2 class=subtitle>Perfil</h2>
+            <h2 class="subtitle">Perfil</h2>
             <div class="perfil-contenido">
-                <img src="./img/fotoPerfil.JPG" id=photo alt="Foto de perfil" width="150" height="150">
-                <p>Hola, soy Kevin Joel Salazar Rodríguez, un estudiante de Ingeniería en Computación en la Escuela Superior Politécnica del Litoral (ESPOL). Me interesa la programación y el desarrollo de software, y estoy constantemente en busca de oportunidades para aplicar mis conocimientos, enfrentar nuevos retos y seguir aprendiendo en el mundo de la tecnología.</p>
+                <img 
+                    src="./img/fotoPerfil.JPG" 
+                    id="photo" 
+                    alt="Foto de perfil de Kevin Salazar" 
+                    width="150" 
+                    height="150"
+                >
+                <p>
+                    Hola, soy Kevin Joel Salazar Rodríguez, un estudiante de Ingeniería en Computación en la Escuela Superior Politécnica del Litoral (ESPOL). Me interesa la programación y el desarrollo de software, y estoy constantemente en busca de oportunidades para aplicar mis conocimientos, enfrentar nuevos retos y seguir aprendiendo en el mundo de la tecnología.
+                    <br>
+                    <strong>Sitio publicado:</strong>
+                    <a href="https://kevinjsalazar.github.io/KevinJSalazar" target="_blank" rel="noopener">
+                        https://kevinjsalazar.github.io/KevinJSalazar
+                    </a>
+                </p>
             </div>
         </section>
+
+        <!-- Sección Experiencia -->
         <section id="experiencia">
-            <h2 class=subtitle>Experiencia</h2>
-            <p>A lo largo de mi formación académica y personal, he participado en diversos proyectos de software y aplicaciones móviles. Tengo experiencia trabajando con Python, Java y C++, además de conocimientos en desarrollo web con HTML.</p>
+            <h2 class="subtitle">Experiencia</h2>
+            <p>
+                A lo largo de mi formación académica y personal, he participado en diversos proyectos de software y aplicaciones móviles. Tengo experiencia trabajando con Python, Java y C++, además de conocimientos en desarrollo web con HTML.
+            </p>
             <h3>Experiencia Laboral</h3>
-            <p>Aunque aún no cuento con experiencia laboral formal, he sido parte de prácticas colaborativas y proyectos académicos que me han permitido fortalecer habilidades como la resolución de problemas, trabajo en equipo y pensamiento crítico.</p>
+            <p>
+                Aunque aún no cuento con experiencia laboral formal, he sido parte de prácticas colaborativas y proyectos académicos que me han permitido fortalecer habilidades como la resolución de problemas, trabajo en equipo y pensamiento crítico.
+            </p>
             <h3>Proyectos Destacados</h3>
             <table>
-                <tr>
-                    <th>Proyecto</th>
-                    <th>Descripción</th>
-                    <th>Herramientas/Lenguajes utilizados</th>
-                    <th>Fecha de finalización</th>
-                </tr>
-                <tr>
-                    <th>Sistema de compra y venta de vehículos</th>
-                    <td>Simulación de compra y venta de autos, camionetas y motocicletas, con funcionalidades como listas de deseados y filtros personalizados.</td>
-                    <td>Java, JavaFX, XML (FXML)</td>
-                    <td>Julio 2023</td>
-                </tr>
-                <tr>
-                    <th>Gestión de base de datos de una página web</th>
-                    <td>Interfaz inspirada en la plataforma PetBacker, diseñada para administrar registros y servicios relacionados con el cuidado de mascotas.</td>
-                    <td>Java, JavaFX, MySQL, XML (FXML)</td>
-                    <td>Diciembre 2023</td>
-                </tr>
-                <tr>
-                    <th>Juego de adivinación de animales</th>
-                    <td>Aplicación en Java que usa un árbol AVL para que la máquina adivine en qué animal está pensando el usuario. Incluye modo alternativo para que el usuario adivine.</td>
-                    <td>Java, JavaFX, XML (FXML)</td>
-                    <td>Mayo 2024</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Descripción</th>
+                        <th>Herramientas/Lenguajes utilizados</th>
+                        <th>Fecha de finalización</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sistema de compra y venta de vehículos</td>
+                        <td>Simulación de compra y venta de autos, camionetas y motocicletas, con funcionalidades como listas de deseados y filtros personalizados.</td>
+                        <td>Java, JavaFX, XML (FXML)</td>
+                        <td>Julio 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de base de datos de una página web</td>
+                        <td>Interfaz inspirada en la plataforma PetBacker, diseñada para administrar registros y servicios relacionados con el cuidado de mascotas.</td>
+                        <td>Java, JavaFX, MySQL, XML (FXML)</td>
+                        <td>Diciembre 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Juego de adivinación de animales</td>
+                        <td>Aplicación en Java que usa un árbol AVL para que la máquina adivine en qué animal está pensando el usuario. Incluye modo alternativo para que el usuario adivine.</td>
+                        <td>Java, JavaFX, XML (FXML)</td>
+                        <td>Mayo 2024</td>
+                    </tr>
+                </tbody>
             </table>
-            <div style="text-align:center; margin-top:20px;">
+
+            <!-- Video explicativo del proyecto -->
+            <div class="video-destacado">
                 <strong>Video explicativo del proyecto "Juego de adivinación de animales":</strong><br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SundmRRQikQ?si=LQHccZHFaSGxl0Yt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe
+                    class="video-proyecto"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/SundmRRQikQ?si=LQHccZHFaSGxl0Yt"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
             </div>
-            <p>Para más información sobre mis proyectos y experiencia, visita mi <a href="https://github.com/KevinJSalazar" target="_blank">perfil de GitHub</a>.</p>
+            <p>
+                Para más información sobre mis proyectos y experiencia, visita mi 
+                <a href="https://github.com/KevinJSalazar" target="_blank" rel="noopener">perfil de GitHub</a>.
+            </p>
         </section>
+
+        <!-- Sección Educación -->
         <section id="educacion">
-            <h2 class=subtitle>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <ol>
                 <li>
                     <strong>Unidad Educativa Salesiana Fiscomisional Domingo Savio</strong><br>
                     <em>2009 - 2022</em><br>
                     Nivel: Bachillerato Técnico<br>
-                    Bachillerato Técnico en Instalaciones, Equipos y Máquinas Eléctricas, con formación práctica y teórica en sistemas eléctricos, automatización, mantenimiento industrial y seguridad eléctrica. <a href="https://www.fiec.espol.edu.ec/es/carreras-de-grado/computacion" target="_blank">Ver página web.</a>
+                    Bachillerato Técnico en Instalaciones, Equipos y Máquinas Eléctricas, con formación práctica y teórica en sistemas eléctricos, automatización, mantenimiento industrial y seguridad eléctrica. 
+                    <a href="https://www.fiec.espol.edu.ec/es/carreras-de-grado/computacion" target="_blank" rel="noopener">Ver página web.</a>
                 </li>
                 <li>
                     <strong>Escuela Superior Politécnica del Litoral (ESPOL)</strong><br>
                     <em>2022 - Actualidad</em><br>
-                    Carrera: <a href="https://www.fiec.espol.edu.ec/es/carreras-de-grado/computacion" target="_blank">Ingeniería en Computación</a><br>
+                    Carrera: 
+                    <a href="https://www.fiec.espol.edu.ec/es/carreras-de-grado/computacion" target="_blank" rel="noopener">Ingeniería en Computación</a><br>
                     La carrera de Computación de ESPOL forma profesionales capaces de diseñar e implementar soluciones de software y hardware en equipos interdisciplinarios, aplicando conocimientos en arquitectura de computadoras, tecnologías de software, sistemas de información y electrónica, con un enfoque ético y sostenible.
                 </li>
                 <li>
                     <strong>DataCamp</strong><br>
                     <em>2024</em><br>
-                    Curso: <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/00220ca54363c4749212565e0a4751de6c38df7e" target="_blank">Intermediate SQL</a><br>
+                    Curso: 
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/00220ca54363c4749212565e0a4751de6c38df7e" target="_blank" rel="noopener">Intermediate SQL</a><br>
                     Este curso de SQL en DataCamp enseña a filtrar, agrupar y resumir datos usando una base de películas, combinando consultas limpias y buenas prácticas para obtener insights claros y útiles.
                 </li>
             </ol>
         </section>
+
+        <!-- Sección Habilidades -->
         <section id="habilidades">
-            <h2 class=subtitle>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <ul>
                 <li>Conocimientos de inglés (nivel intermedio alto)</li>
                 <li>Lenguajes de programación: Python, Java, C++</li>
@@ -110,31 +161,35 @@
                 <li>Gestión del tiempo y organización</li>
             </ul>
         </section>
+
+        <!-- Sección Contacto -->
         <section id="contacto">
-            <h2 class=subtitle>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <ul>
                 <li>Correo: <a href="mailto:kejosala@espol.edu.ec">kejosala@espol.edu.ec</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/kevin-salazar-rodr%C3%ADguez-77302b279/" target="_blank">Kevin Salazar Rodríguez</a></li>
-                <li>GitHub: <a href="https://github.com/KevinJSalazar" target="_blank">KevinJSalazar</a></li>
-                <li>Portafolio: <a href="https://kevinjsalazar.github.io/KevinJSalazar" target="_blank">kevinjsalazar.github.io/KevinJSalazar</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/kevin-salazar-rodr%C3%ADguez-77302b279/" target="_blank" rel="noopener">Kevin Salazar Rodríguez</a></li>
+                <li>GitHub: <a href="https://github.com/KevinJSalazar" target="_blank" rel="noopener">KevinJSalazar</a></li>
+                <li>Portafolio: <a href="https://kevinjsalazar.github.io/KevinJSalazar" target="_blank" rel="noopener">kevinjsalazar.github.io/KevinJSalazar</a></li>
             </ul>
+
+            <!-- Mapa de la ESPOL -->
             <h3>Ubicación</h3>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6826801345793!2d-79.96773917083964!3d-2.1455748999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d1f1d1f1d1f%3A0x1234567890abcdef!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1697040000000!5m2!1ses!2sec" 
                 width="600" 
                 height="450" 
                 style="border:0;" 
-                allowfullscreen="" 
+                allowfullscreen 
                 loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <!-- Formulario para contactarme -->
             <h3>Contáctame</h3>
             <form action="/submit" method="post">
-                <!-- Campo de texto en una línea -->
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
-        
-                <!-- Lista desplegable -->
+
                 <label for="motivo">Motivo de contacto:</label>
                 <select id="motivo" name="motivo" required>
                     <option value="">Seleccione una opción</option>
@@ -142,8 +197,7 @@
                     <option value="proyecto">Propuesta de proyecto</option>
                     <option value="otro">Otro</option>
                 </select>
-        
-                <!-- Conjunto de opciones relacionadas -->
+
                 <fieldset>
                     <legend>¿Cómo prefieres ser contactado?</legend>
                     <input type="radio" id="email" name="contacto" value="email" required>
@@ -151,8 +205,7 @@
                     <input type="radio" id="telefono" name="contacto" value="telefono" required>
                     <label for="telefono">Teléfono</label>
                 </fieldset>
-        
-                <!-- Vector de valores (checkboxes) -->
+
                 <fieldset>
                     <legend>Áreas de interés:</legend>
                     <input type="checkbox" id="programacion" name="intereses" value="programacion" required>
@@ -162,34 +215,54 @@
                     <input type="checkbox" id="gestion" name="intereses" value="gestion" required>
                     <label for="gestion">Gestión</label>
                 </fieldset>
-        
-                <!-- Área de texto -->
+
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        
-                <!-- Botón para enviar -->
+
                 <button type="submit">Enviar</button>
             </form>
         </section>
+
+        <!-- Sección Referencias -->
         <section id="referencias">
-            <h2 class=subtitle>Referencias</h2>
+            <h2 class="subtitle">Referencias</h2>
             <article>
-                <blockquote>"Kevin es un perfeccionista con sus trabajos, revisa y pone a prueba varias veces sus proyectos para estar seguro de que todo funcione lo mejor posible."</blockquote>
-                <strong>Levin Morán</strong> - Estudiante de la carrera de Computación en ESPOL. Trabajó con Kevin en el desarrollo del proyecto de una base de datos de una pagina web. <a href="https://github.com/KevinJSalazar/ProyectoSBD" target="_blank">Más información</a>.
+                <blockquote>
+                    "Kevin es un perfeccionista con sus trabajos, revisa y pone a prueba varias veces sus proyectos para estar seguro de que todo funcione lo mejor posible."
+                </blockquote>
+                <strong>Levin Morán</strong> - Estudiante de la carrera de Computación en ESPOL. Trabajó con Kevin en el desarrollo del proyecto de una base de datos de una pagina web. 
+                <a href="https://github.com/KevinJSalazar/ProyectoSBD" target="_blank" rel="noopener">Más información</a>.
             </article>
             <article>
-                <blockquote>"Se caracteriza por ser responsable y cumplir puntualmente con las fechas de entrega, asegurando trabajos organizados y de calidad."</blockquote>
-                <strong>Silvia Saquisili</strong> - Estudiante de la carrera de Computación en ESPOL. Colaboró con Kevin en numerosos trabajos académicos haciendo uso de Java y JavaFX, entre los cuales se encuentra el juego de adivinación de animales. <a href="https://github.com/KevinJSalazar/Proyecto2-EstructurasDatos" target="_blank">Más información</a>.
+                <blockquote>
+                    "Se caracteriza por ser responsable y cumplir puntualmente con las fechas de entrega, asegurando trabajos organizados y de calidad."
+                </blockquote>
+                <strong>Silvia Saquisili</strong> - Estudiante de la carrera de Computación en ESPOL. Colaboró con Kevin en numerosos trabajos académicos haciendo uso de Java y JavaFX, entre los cuales se encuentra el juego de adivinación de animales. 
+                <a href="https://github.com/KevinJSalazar/Proyecto2-EstructurasDatos" target="_blank" rel="noopener">Más información</a>.
             </article>
             <article>
-                <blockquote>"Es una persona trabajadora, dedicada y perseverante, que no se detiene hasta completar sus tareas con responsabilidad y compromiso."</blockquote>
+                <blockquote>
+                    "Es una persona trabajadora, dedicada y perseverante, que no se detiene hasta completar sus tareas con responsabilidad y compromiso."
+                </blockquote>
                 <strong>Angel Gómez</strong> - Colaboró con Kevin en trabajos académicos grupales en la materia de Diseño de Software, participando activamente en el desarrollo y documentación de proyectos.
             </article>
         </section>
     </main>
+
+    <!-- Pie de página -->
     <footer>
         <p>Este CV fue creado como parte de un proyecto académico y personal. Todos los derechos reservados.</p>
         &copy; 2025 Kevin Salazar
     </footer>
+
+    <!-- Botón flotante para ir arriba -->
+    <button id="go-top" title="Ir arriba" aria-label="Ir arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="28" height="28">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Scripts externos -->
+    <script src="./scripts.js"></script>
 </body>
 </html>
